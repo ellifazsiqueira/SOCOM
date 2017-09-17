@@ -1,0 +1,37 @@
+section.noticias
+    .container
+        color: $branco
+        text-align: center
+        .topo
+            margin: 20px auto
+            img
+                height: 100px
+            h1
+                +font-size(60px)
+            h2
+                +font-size(40px)
+        .noticia
+            .condecoracao
+                border-bottom:  2px solid $vermelho
+                .prologo
+                    p
+                        i
+                            font-weight: $light
+                .cabecalho
+                    margin: 30px auto 0 auto
+                    img
+                        height: 30px
+                    .patente
+                        width: 50px
+                        height: auto
+                    h3
+                        margin: 5px auto
+                    h4
+                        font-weight: $light
+                        +font-size(20px)
+                .agraciados
+                    font-weight: $bold
+                    a
+                        color: $branco
+                        &:hover
+                            color: $vermelho

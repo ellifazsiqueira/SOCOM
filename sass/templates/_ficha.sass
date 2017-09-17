@@ -1,0 +1,68 @@
+body
+    background-color: $preto !important
+    .layout
+      +breakpoint($notebook)
+        min-width: 1024px
+        min-height: 935px
+        margin: 0 auto
+        background:
+          position: top center
+          repeat: no-repeat
+          color: $preto
+          attachment: fixed
+      +breakpoint($fullhd)
+        max-width: 1920px
+        min-height: 935px
+        margin: 0 auto
+        background:
+          position: top center
+          repeat: no-repeat
+          color: $preto
+          attachment: fixed
+      +breakpoint($ultrawide)
+        min-width: 1921px
+        min-height: 935px
+        margin: 0 auto
+        background:
+          position: top center
+          repeat: no-repeat
+          color: $preto
+          attachment: fixed
+section.corpo
+    .ficha
+        color: $branco
+        margin-top: 25px
+        .csib
+            text-align: center
+            img
+                height: 120px
+        .topo
+            +flexbox
+            +align-items(center)
+            +justify-content(space-around)
+            +make-sm-column(8)
+            +make-sm-column-offset(2)
+            margin-bottom: 25px
+            .unidade
+                text-align: center
+                h1,
+                h2
+                    font-weight: $bold
+                    +font-size(40px)
+                    line-height: 15px
+        .uniforme
+            text-align: center
+            img
+                width: 85%
+        .titulos
+            min-height: 25px
+            background-color: #991818
+            padding: 10px 15px
+            font-weight: $bold
+            text-transform: uppercase
+            +font-size(30px)
+            margin-bottom: 10px
+        table
+            table-layout: fixed
+        a:hover
+            color: $vermelho

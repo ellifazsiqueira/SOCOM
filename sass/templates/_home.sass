@@ -1,0 +1,35 @@
+@import organisms/corpo
+
+body
+  background-color: $preto !important
+  .layout
+    +breakpoint($notebook)
+      min-width: 1024px
+      min-height: 935px
+      margin: 0 auto
+      background:
+        image: url('../images/background/background-1.png')
+        position: top center
+        repeat: no-repeat
+        color: $preto
+        attachment: fixed
+    +breakpoint($fullhd)
+      max-width: 1920px
+      min-height: 935px
+      margin: 0 auto
+      background:
+        image: url('../images/background/background-1.png')
+        position: top center
+        repeat: no-repeat
+        color: $preto
+        attachment: fixed
+    +breakpoint($ultrawide)
+      min-width: 1921px
+      min-height: 935px
+      margin: 0 auto
+      background:
+        image: url('../images/background/background-w-1.png')
+        position: top center
+        repeat: no-repeat
+        color: $preto
+        attachment: fixed

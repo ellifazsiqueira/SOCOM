@@ -1,0 +1,44 @@
+body
+    background-color: $preto !important
+    .layout
+        max-width: 1920px
+        min-height: 935px
+        margin: 0 auto
+        background: 
+            image: url('../images/background/background-2.png')
+            position: top center
+            repeat: no-repeat
+            color: $preto
+            attachment: fixed
+        section.corpo
+            .container
+                margin-top: 60px
+                .unidades
+                    +flexbox
+                    +align-items(center)
+                    +justify-content(space-around)
+                    +make-sm-column(8)
+                    +make-sm-column-offset(2)
+                    .logo-socom
+                        +order(3)
+
+                    [class^="icone-"]
+                        &.icone-afsoc
+                            +order(1)
+                        &.icone-usasoc
+                            +order(2)
+                        &.icone-nswc
+                            +order(4)
+                        &.icone-marsoc
+                            +order(5)
+            .textos
+                +make-sm-column(12)
+                color: $branco
+                margin-bottom: 20px
+                h1
+                    text-align: center
+                p
+                    text-align: justify
+                ul
+                    li
+                        text-align: justify

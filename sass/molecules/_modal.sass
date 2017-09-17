@@ -1,0 +1,27 @@
+.modal
+  border: 20px solid rgba($cinza, 0.6)
+  width: 700px
+  height: 300px
+  border-radius: 20px
+  .modal-content
+    background-color: $preto
+    width: 100%
+    height: 100%
+    color: $branco
+    .modal-titulo
+      h1
+        +font-size(20px)
+        border-bottom: 1px solid $cinza
+        padding: 15px 15px
+    .modal-conteudo
+      +font-size(13px)
+      margin: 15px
+      .modal-imagem
+        text-align: center
+        margin: 20px
+        img
+          width: 75px
+      .modal-texto
+        text-align: justify
+      .modal-assinatura
+        margin-top: 20px

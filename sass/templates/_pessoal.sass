@@ -1,0 +1,85 @@
+@import organisms/corpo
+@import organisms/textos
+
+body
+    background-color: $preto !important
+    .layout
+      +breakpoint($notebook)
+        min-width: 1024px
+        min-height: 935px
+        margin: 0 auto
+        background:
+          image: url('../images/background/background-4.png')
+          position: top center
+          repeat: no-repeat
+          color: $preto
+          attachment: fixed
+      +breakpoint($fullhd)
+        max-width: 1920px
+        min-height: 935px
+        margin: 0 auto
+        background:
+          image: url('../images/background/background-4.png')
+          position: top center
+          repeat: no-repeat
+          color: $preto
+          attachment: fixed
+      +breakpoint($ultrawide)
+        min-width: 1921px
+        min-height: 935px
+        margin: 0 auto
+        background:
+          image: url('../images/background/background-w-4.png')
+          position: top center
+          repeat: no-repeat
+          color: $preto
+          attachment: fixed
+    section.corpo
+        .comando
+            text-align: center
+            margin: 100px 0
+            h1
+                color: $branco
+                font-weight: $bold
+                text-transform: uppercase
+                +font-size(80px)
+        .clicaveis
+            +flexbox
+            +align-items(center)
+            +justify-content(space-around)
+            +make-sm-column(10)
+            +make-sm-column-offset(1)
+            margin-top: 100px
+            margin-bottom: 275px
+            [class^="click-"]
+                a
+                    color: $branco
+                    text-align: center
+                    +transition(.5s)
+                    &:hover
+                        color: $vermelho
+                    i
+                        font-size: 100px
+                        p
+                            +font-size(55px)
+        .insignias
+            +flexbox
+            +align-items(center)
+            +justify-content(space-around)
+            +make-sm-column(8)
+            +make-sm-column-offset(2)
+            text-align: center
+            margin: 100px 0 255px 0
+            [class^="insignia-"]
+                a
+                    color: $branco
+                    text-align: center
+                    &:hover
+                        color: $vermelho
+                    p
+                        text-align: center
+                        font-weight: $bold
+                    img
+                        text-align: center
+                &.insignia-mountain
+                    margin-top: 35px

@@ -1,0 +1,102 @@
+section.inicio
+    .container
+        margin-top: 150px
+        text-align: center
+        .unidades
+            +flexbox
+            +align-items(center)
+            +justify-content(space-around)
+            +make-sm-column(8)
+            +make-sm-column-offset(2)
+            .logo-socom
+                +order(3)
+                
+            [class^="icone-"]
+                &.icone-afsoc
+                    +order(1)
+                &.icone-usasoc
+                    +order(2)
+                &.icone-nswc
+                    +order(4)
+                &.icone-marsoc
+                    +order(5)
+                    
+        .usasoc-texto
+            +make-sm-column(10)
+            +make-sm-column-offset(1)
+            color: $branco
+            margin-bottom: 145px
+            h1
+                +font-size(80px)
+                font-weight: $bold
+                margin: 100px 0
+                
+section.corpo
+    .container
+        margin-top: 60px
+        .unidades
+            +flexbox
+            +align-items(center)
+            +justify-content(space-around)
+            +make-sm-column(8)
+            +make-sm-column-offset(2)
+            .logo-socom
+                +order(3)
+                
+            [class^="icone-"]
+                &.icone-afsoc
+                    +order(1)
+                &.icone-usasoc
+                    +order(2)
+                &.icone-nswc
+                    +order(4)
+                &.icone-marsoc
+                    +order(5)
+        .comando-usasoc
+            +flexbox
+            color: $branco
+            .csib
+                margin-right: 50px
+            .texto
+                margin: auto 0
+                text-align: justify
+        [class^="estrutura-"]
+            +flexbox
+            color: $branco
+            margin: 50px 0 0 50px
+            .csib
+                margin-top: 10px
+                margin-right: 50px
+            .textos
+                margin: auto 0
+                text-align: justify
+                
+            &.estrutura-ranger
+                margin: 50px 0 0 25px
+                .csib
+                    margin-top: 0
+                    margin-right: 20px
+        [class^="unidade-"]
+            +flexbox
+            color: $branco
+            margin: 50px 0 0 100px
+            .csib
+                margin-top: 30px
+                margin-right: 50px
+            .texto
+                margin: auto 0
+                text-align: justify
+            &.unidade-1ranger
+                .csib
+                    margin-top: 0
+            &.unidade-72
+                margin-bottom: 50px
+                
+section.estrutura
+    .organograma
+        +flexbox
+        +align-items(center)
+        +justify-content(space-around)
+        margin: 25px 0
+        img
+            height: 725px

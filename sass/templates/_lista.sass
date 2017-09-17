@@ -1,0 +1,71 @@
+body
+    background-color: $preto !important
+    .layout
+      +breakpoint($notebook)
+        min-width: 1024px
+        min-height: 935px
+        margin: 0 auto
+        background:
+          image: url('../images/background/background-4.png')
+          position: top center
+          repeat: no-repeat
+          color: $preto
+          attachment: fixed
+      +breakpoint($fullhd)
+        max-width: 1920px
+        min-height: 935px
+        margin: 0 auto
+        background:
+          image: url('../images/background/background-4.png')
+          position: top center
+          repeat: no-repeat
+          color: $preto
+          attachment: fixed
+      +breakpoint($ultrawide)
+        min-width: 1921px
+        min-height: 935px
+        margin: 0 auto
+        background:
+          image: url('../images/background/background-w-4.png')
+          position: top center
+          repeat: no-repeat
+          color: $preto
+          attachment: fixed
+    section.corpo
+        .comando
+            text-align: center
+            margin: 50px auto
+            img
+
+            h2
+                color: $branco
+        .panel
+            background-color: rgba($preto, 0.5)
+            .panel-heading
+                text-align: center
+                color: $branco
+                border-bottom: 2px solid $vermelho
+                img
+                    height: 100px
+                h3
+                    font-weight: $bold
+            .tabela
+                caption
+                    color: $branco
+                    +font-size(30px)
+                    text-align: center
+                    font-weight: $bold
+                    width: 1890px
+                    padding: 20px
+                tbody
+                    tr
+                        height: 20px
+                        width: 100%
+                        color: $branco
+                        a
+                            color: $branco
+                    .linha
+                        &:hover
+                            background-color: rgba($vermelho, 0.5)
+                    .patente
+                        height: 50px
